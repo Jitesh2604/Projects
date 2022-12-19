@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        *{
+            background-color: black;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,20%);
+            gap: 2%;
+            margin-top: 20px;
+            justify-content: center;
+            background-color: black;
+            color: white;
+        }
+        #navbar>input{
+            width: 50%;
+            height: 30px;
+            margin-left: 20px;
+            color: white;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+        button{
+            height: 36px;
+            width: 150px;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            margin-top: 5px;
+        }
+    #navbar{
+        display: flex;
+        font-size: 20px;
+    }
+    #navbar>img{
+        width: 200px;
+        height: 100px;
+        margin-top: -25px;
+    }
+    i{
+        margin-top: 15px;
+        background-color: black;
+        color: white;
+    }
+    .fa-video{
+        margin-left: 11%;
+    }
+    .fa-bell{
+        margin-left: 2%;
+    }
+    #navbar>div{
+        color: white;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        border-radius: 50px;
+        margin-top: 10px;
+        margin-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: purple;
+    }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <i class="fa-solid fa-bars"></i>
+        <img src="https://wallpapercave.com/wp/wp8813958.jpg" alt="youtubeLogo">
+        <input type="text" id="query">
+        <button onclick="getData()">Search</button>
+        <i class="fa-solid fa-circle-microphone"></i>
+        <i class="fa-solid fa-video"></i>
+        <i class="fa-solid fa-bell"></i>
+        <div>J</div>
+    </div>
+    <div id="container"></div>
+</body>
+<script src="index.js"></script>
+</html>
